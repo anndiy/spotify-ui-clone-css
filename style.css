@@ -1,0 +1,40 @@
+@font-face {
+    font-family: spotifyUIbold;
+    src: url("./assets/spotify_mix_ui_bold.otf");
+}
+@font-face {
+    font-family: spotifyUInormal;
+    src: url("./assets/spotify_mix_ui_regular.otf");
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: spotifyUInormal;
+    font-size:small;
+    letter-spacing: 0.6px;
+    font-weight:lighter;
+    color: #fafafa;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.dull {
+    color: #9e9e9e;
+}

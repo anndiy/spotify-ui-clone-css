@@ -1,0 +1,33 @@
+#bottom {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+}
+
+.bottomleft {
+    width: 260px;
+    display: flex;
+    height:60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activesongdetail {
+    margin-right: 8px;
+}
+.credits {
+    font-size: smaller;
+}
+
+.activethumbnail {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+}
+
+
+.addedtoplaylist {
+    width: 16px;
+    height: 16px;
+}

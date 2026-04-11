@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./components/top.css">
+    <link rel="stylesheet" href="./components/middle/library.css">
+    <link rel="stylesheet" href="./components/middle/feed.css">
+    <link rel="stylesheet" href="./components/middle/activesongprofile.css">
+    <link rel="stylesheet" href="./components/bottom.css">
+</head>
+<body>
+    <div class="container">
+    <div id="top">
+        <div class="left">
+        <img class="logo btn" src="./assets/logo.png">
+        <div class="homeCover btn"><img class="home" src="./assets/home.png"></div>
+        </div>
+        <div id="searcharea"></div>
+    </div>
+    <div id="main">
+        <div class="library">
+            <div class="library_top_container">
+                <div class="topline">
+                    <h3 class="btn">Your Library</h3> 
+                    <div id="createPlaylist" class="btn"><img src="./assets/plus.png"></img></div>
+                    <img id="expand" class="btn" src="./assets/expand.png"></img>
+                </div>
+                <div class="secondline">
+                    <span class="btn">Playlists</span>
+                    <span class="btn">Artists</span>
+                    <span class="btn">Albums</span>
+                </div>
+            </div>
+            <div class="library_bottom_container">
+                <div class="minicontainer">
+                    <img class="btn" src="./assets/search.png" alt="">
+                    <span class="recents btn dull">Recents <img src="./assets/recents.png" alt=""></span>
+                </div>
+                <div class="library_list">
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv">
+                            <img src="./assets/thumbnails/liked.jfif" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">Liked Songs</p>
+                            <p class="dull"> <img style="width: 12px;" src="./assets/pin.png"> Playlist • 87 songs</p>
+                        </div>
+                    </div>
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv">
+                            <img src="./assets/thumbnails/thumbnail1.webp" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">Parvana</p>
+                            <p class="dull">EP • Chaar Diwaari</p>
+                        </div>
+                    </div>
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv">
+                            <img src="./assets/thumbnails/thumbnail2.png" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">daylist</p>
+                            <p class="dull">Playlist • Made for Anand</p>
+                        </div>
+                    </div>                    
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv artist">
+                            <img src="./assets/thumbnails/thumbnail3.webp" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">gini</p>
+                            <p class="dull">Artist</p>
+                        </div>
+                    </div>
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv">
+                            <img src="./assets/thumbnails/thumbnail4.jpg" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">Euthanasia</p>
+                            <p class="dull">Playlist • Anand  </p>
+                        </div>
+                    </div>
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv artist">
+                            <img src="./assets/thumbnails/thumbnail5.webp" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">Tsumyoki</p>
+                            <p class="dull">Artist</p>
+                        </div>
+                    </div>
+                    <div class="rect_card btn">
+                        <div class="rectcard_imgdiv artist">
+                            <img src="./assets/thumbnails/thumbnail6.webp" alt="">
+                        </div>
+                        <div class="rectcard_detaildiv">
+                            <p class="rect_title">SZA</p>
+                            <p class="dull">Artist</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="feed"></div>
+        <div class="activesongprofile"></div>
+    </div>
+    <div id="bottom">
+        <div class="bottomleft">
+        <img class="activethumbnail" src="./assets/thumbnails/thumbnail_active.jfif" alt="" srcset="">
+        <div class="activesongdetail">
+            <p class="playersongname">Iss Tarah</p>
+            <p class="credits">Chaar Diwaari, Sonu Nigam</p>
+        </div>
+        <img class="addedtoplaylist" src="./assets/addedtoplaylist.png" alt="">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
