@@ -1,0 +1,146 @@
+.feed {
+    width: 780px;
+    height: 520px;
+    margin: 8px 2px;
+    background: linear-gradient(180deg,rgba(200, 192, 176, 0.41) 0%, rgba(18, 18, 18, 0.64) 50%, rgba(18, 18, 18, 1) 100%);
+    border-radius: 6px;
+    overflow-y: scroll;
+}
+
+.feed > div {
+    padding: 18px 40px 0px 40px;
+}
+
+@-moz-document url-prefix() {
+.feed {
+    scrollbar-width: thin;
+    scrollbar-color: #666 transparent;
+}
+.feed:hover {
+    scrollbar-color: #909090 transparent;
+}
+}
+
+.feed::-webkit-scrollbar {
+  width: 6px;
+}
+.feed::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+
+.feed::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
+
+
+.audiotype {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.audiotype > span {
+    padding: 6px 12px;
+    background-color: rgba(104, 104, 104, 0.606);
+    border-radius: 16px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card {
+    border-radius: 4px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    height: 48px;
+    justify-content: space-between;
+    background-color: rgba(86, 86, 83, 0.4);
+
+}
+.card > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px 0px 0px 4px;
+}
+.cardname {
+    font-weight: 800;
+    width: 180px;
+    margin-right: 50px;
+}
+
+.cardplay {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    box-shadow: 0 6px 10px rgba(53, 53, 53, 1);
+}
+.cardplay > img {
+    width: 16px;
+    height: 16px;
+}
+.card:hover .cardplay {
+    opacity: 1;
+}
+
+
+.mainline {
+    font-size: x-large;
+    font-family: spotifyUIbold;
+    font-weight: bolder;
+}
+
+.heading {
+    padding-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.littleline {
+    padding-left: 10px;
+}
+.tilelist {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 8px;
+}
+.tilelist::-webkit-scrollbar {
+  display: none;
+}
+
+.tile{
+    display: flex;
+    width: 170px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.tile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.tile:hover {
+    background-color: #6262622f;
+}
+
+.tile p {
+    font-size: small;
+    padding-top: 8px;
+}
