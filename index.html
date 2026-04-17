@@ -7,385 +7,396 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./components/top.css">
-    <link rel="stylesheet" href="./components/middle/library.css">
-    <link rel="stylesheet" href="./components/middle/feed.css">
-    <link rel="stylesheet" href="./components/middle/activesongprofile.css">
+    <link rel="stylesheet" href="./components/hero.css">
+    <link rel="stylesheet" href="./components/main/library.css">
+    <link rel="stylesheet" href="./components/main/feed.css">
+    <link rel="stylesheet" href="./components/main/nowplaying.css">
     <link rel="stylesheet" href="./components/bottom.css">
 </head>
 <body>
     <div class="container">
-    <div id="top">
-        <div class="left">
-        <img class="logo btn" src="./assets/logo.png">
-        <div class="homeCover btn"><img class="home" src="./assets/home.png"></div>
+    <div class="container-hero">
+        <div class="container-hero__left">
+        <img class="hero-left__logo pointer" src="./assets/logo.png">
+        <div class="hero-left__home pointer"><img class="home" src="./assets/home.png"></div>
         </div>
-        <div class="searcharea">
-            <div class="searchpart">
-                <img class="btn brighten" src="./assets/search.png" alt="">
-                <div class="searchtext dull">What do you want to play?</div>
-                <div class="keybinds">
-                    <span class="dull">Ctrl</span>
-                    <span class="dull">Shift</span>
-                    <span class="dull">L</span>
+        <div class="container-hero__search">
+            <div class="hero-search__bar">
+                <img class="search-bar__icon pointer brighten" src="./assets/search.png" alt="Search Icon">
+                <div class="search-bar__text dull">What do you want to play?</div>
+                <div class="search-bar__keybinds">
+                    <span>Ctrl</span>
+                    <span>Shift</span>
+                    <span>L</span>
                 </div>
             </div>
-            <div class="browsepart">
+            <div class="hero-search__browse">
                 <div style="width: 1px;height: 24px;background-color: #9e9e9e;"></div>
-                <img class="btn brighten" src="./assets/browse.png" alt="">
+                <img class="search-browse__icon pointer brighten" src="./assets/browse.png" alt="">
             </div>
         </div>
-        <div class="right">
-            <div class="dull brighten btn"><img src="./assets/download.png"> Install App</div>
-            <img class="btn brighten" src="./assets/notifications.png">
-            <img class="btn brighten" src="./assets/friends.png">
+        <div class="container-hero__right">
+            <div class="dull brighten pointer"><img src="./assets/download.png"> Install App</div>
+            <img class="pointer brighten" src="./assets/notifications.png">
+            <img class="pointer brighten" src="./assets/friends.png">
         </div>
-        <div class="pfp btn"><img src="./assets/pfp.webp"></div>
+        <div class="container-hero__pfp">
+            <img class="pointer" src="./assets/pfp.webp">
+        </div>
     </div>
-    <div id="main">
-        <div class="library">
-            <div class="library_top_container">
-                <div class="topline">
-                    <h3 class="btn">Your Library</h3> 
-                    <div id="createPlaylist" class="btn"><img src="./assets/plus.png"></img></div>
-                    <img id="expand" class="btn" src="./assets/expand.png"></img>
+    <div class="container-main">
+        <div class="container-main__library">
+            <div class="library-head">
+                <div class="library-head__controls">
+                    <h3 class="pointer">Your Library</h3> 
+                    <div class="library-head__controls-add pointer"><img src="./assets/plus.png"></img></div>
+                    <img class="library-head__controls-expand brighten pointer" src="./assets/expand.png"></img>
                 </div>
-                <div class="secondline">
-                    <span class="btn">Playlists</span>
-                    <span class="btn">Artists</span>
-                    <span class="btn">Albums</span>
+                <div class="library-head__types">
+                    <span class="pointer">Playlists</span>
+                    <span class="pointer">Artists</span>
+                    <span class="pointer">Albums</span>
                 </div>
             </div>
-            <div class="library_bottom_container">
-                <div class="minicontainer">
-                    <img class="btn" src="./assets/search.png" alt="">
-                    <span class="recents btn dull">Recents <img src="./assets/recents.png" alt=""></span>
+            <div class="library-content">
+                <div class="library-content__accessbar">
+                    <img class="pointer" src="./assets/search.png" alt="">
+                    <span class="library-content__accessbar-recents pointer dull">Recents <img src="./assets/recents.png" alt=""></span>
                 </div>
-                <div class="library_list">
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv">
+                <div class="library-content__cardlist">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img">
                             <img src="./assets/liked.jfif" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">Liked Songs</p>
-                            <p class="dull"> <img style="width: 12px;" src="./assets/pin.png"> Playlist • 87 songs</p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">Liked Songs</p>
+                            <p> <img style="width: 12px;" src="./assets/pin.png"> Playlist • 87 songs</p>
                         </div>
                     </div>
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img">
                             <img src="https://i.scdn.co/image/ab67616d000011eb55464e747040763e1616b01d" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">Parvana</p>
-                            <p class="dull">EP • Chaar Diwaari</p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">Parvana</p>
+                            <p>EP • Chaar Diwaari</p>
                         </div>
                     </div>
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img">
                             <img src="https://daylist.spotifycdn.com/playlist-covers-mix/en/early-morning_default.jpg" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">daylist</p>
-                            <p class="dull">Playlist • Made for Anand</p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">daylist</p>
+                            <p>Playlist • Made for Anand</p>
                         </div>
                     </div>                    
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv artist">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img artist">
                             <img src="https://i.scdn.co/image/ab6761610000101f2567e4002ed6da6a68155755" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">gini</p>
-                            <p class="dull">Artist</p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">gini</p>
+                            <p>Artist</p>
                         </div>
                     </div>
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img">
                             <img src="https://i.pinimg.com/1200x/23/5f/bc/235fbc56952785aacc748b4cdec1e5f9.jpg" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">Euthanasia</p>
-                            <p class="dull">Playlist • Anand  </p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">Euthanasia</p>
+                            <p>Playlist • Anand  </p>
                         </div>
                     </div>
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv artist">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img artist">
                             <img src="https://i.scdn.co/image/ab6761610000101f5a294a8f2e58115618c8d9f1" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">Tsumyoki</p>
-                            <p class="dull">Artist</p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">Tsumyoki</p>
+                            <p>Artist</p>
                         </div>
                     </div>
-                    <div class="rect_card btn">
-                        <div class="rectcard_imgdiv artist">
+                    <div class="library-content__card pointer">
+                        <div class="library-content__card-img artist">
                             <img src="https://i.scdn.co/image/ab6761610000101ffd0a9fb6c252a3ba44079acf" alt="">
                         </div>
-                        <div class="rectcard_detaildiv">
-                            <p class="rect_title">SZA</p>
-                            <p class="dull">Artist</p>
+                        <div class="library-content__card-detail">
+                            <p class="library-content__card-detail__title">SZA</p>
+                            <p>Artist</p>
                         </div>
                     </div>  
                 </div>
             </div>
         </div>
-        <div class="feed">
-            <div class="audiotype">
-                <span class="btn" style="background-color: rgb(255, 255, 255);color: #696969;">All</span>
-                <span class="btn brighten">Music</span>
-                <span class="btn brighten">Podcasts</span>
+        <div class="container-main__feed">
+            <div class="feed-audiotype">
+                <span class="pointer" style="background-color: rgb(255, 255, 255);color: #696969;">All</span>
+                <span class="pointer brighten">Music</span>
+                <span class="pointer brighten">Podcasts</span>
             </div>
-            <div class="cards">
-                <div class="card btn">
+            <div class="feed-rect__cards">
+                <div class="rect-card pointer">
                     <img src="https://i.scdn.co/image/ab67616d000011eb55464e747040763e1616b01d" alt="">
-                    <div class="cardname">Parvana</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">Parvana</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="https://i.scdn.co/image/ab6761610000e5eb7c6855a92b408b6f82f3e6d1" alt="">
-                    <div class="cardname">Asha Bhosle</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">Asha Bhosle</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="./assets/liked.jfif" alt="">
-                    <div class="cardname">Liked Songs</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">Liked Songs</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="https://i.scdn.co/image/ab6761610000e5ebf0c20db5ef6c6fbe5135d2e4" alt="">
-                    <div class="cardname">XXXTENTACION</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">XXXTENTACION</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="https://i.scdn.co/image/ab6761610000939bbc959d7569618ec2af2210f5" alt="">
-                    <div class="cardname">Sonu Nigam</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">Sonu Nigam</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="https://i.scdn.co/image/ab676161000051747f5cc432c9c109248ebec1ac" alt="">
-                    <div class="cardname">2Pac</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">2Pac</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/55Aa2cqylxrFIXC767Z865/en-GB" alt="">
-                    <div class="cardname">This is Lil Wayne</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">This is Lil Wayne</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
-                <div class="card btn">
+                <div class="rect-card pointer">
                     <img src="https://i.scdn.co/image/ab67616d000048519fd839ed5ae2fd87ee8ac923" alt="">
-                    <div class="cardname">Dooron Dooron</div>
-                    <div class="cardplay">
+                    <div class="rect-card__name">Dooron Dooron</div>
+                    <div class="rect-card__play">
                         <img src="./assets/play_black.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="carousel">
-                <p class="littleline dull" style="font-size: smaller;">Made for</p>
-                <div class="heading">
-                    <p class="mainline ul">Anand</p>
-                    <p class="showAll ul dull">Show All</p>
+            <div class="feed-carousel">
+                    <div class="feed-carousel__head">
+                    <p class="carousel-head__note dull">Made for</p>
+                    <div class="carousel-head__title">
+                        <p class="head-title__content ul">Anand</p>
+                        <p class="head-title__showall ul dull">Show All</p>
+                    </div>
                 </div>
-                <div class="tilelist">
-                    <div class="tile btn">
+                <div class="feed-carousel__tilelist">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/1/ab6761610000e5ebcb6926f44f620555ba444fca/en">
-                        <p class="dull">Pritam, Amit Trivedi, Sachin-Jigar and...</p>
+                        <p>Pritam, Amit Trivedi, Sachin-Jigar and...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/2/ab6761610000e5eb7eb445ba07f18c2c456db693/en">
-                        <p class="dull">Mehul Mahesh, Aditya Rikhari, Savneet Sin...</p>
+                        <p>Mehul Mahesh, Aditya Rikhari, Savneet Sin...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/3/ab6761610000e5eb7893d3d72cd3b06791652580/en">
-                        <p class="dull">Chaar Diwaari, KR$NA, Tsumyoki an...</p>
+                        <p>Chaar Diwaari, KR$NA, Tsumyoki an...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/4/ab6761610000e5eb05c8b29490c71708eb8b9a8f/en">
-                        <p class="dull">Clayjars, Amod Mardolkar, Alison...</p>
+                        <p>Clayjars, Amod Mardolkar, Alison...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/5/ab6761610000e5ebe2e8e7ff002a4afda1c7147e/en">
-                        <p class="dull">Taylor Swift, Lady Gaga, Olivia Rodrigo...</p>
+                        <p>Taylor Swift, Lady Gaga, Olivia Rodrigo...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/6/ab6761610000e5ebb19af0ea736c6228d6eb539c/en">
-                        <p class="dull">A.R. Rahman, G. V. Prakash, Pritam and...</p>
+                        <p>A.R. Rahman, G. V. Prakash, Pritam and...</p>
                     </div>
                 </div>
             </div>
-            <div class="carousel">
-                <p class="littleline dull" style="font-size: smaller;">Non-stop music based on your favorite songs and artists.</p>
-                <div class="heading">
-                    <p class="mainline ul">Recommended Stations</p>
-                    <p class="showAll ul dull">Show All</p>
+            <div class="feed-carousel">
+                    <div class="feed-carousel__head">
+                    <p class="carousel-head__note dull">Non-stop music based on your favorite songs and artists.</p>
+                    <div class="carousel-head__title">
+                        <p class="head-title__content ul">Recommended Stations</p>
+                        <p class="head-title__showall ul dull">Show All</p>
+                    </div>  
                 </div>
-                <div class="tilelist">
-                    <div class="tile btn">
+                <div class="feed-carousel__tilelist">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/track/3qhlB30KknSejmIvZZLjOD/en">
-                        <p class="dull">With Djo, sombr, Billie Eilish and more</p>
+                        <p>With Djo, sombr, Billie Eilish and more</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/track/5aIVCx5tnk0ntmdiinnYvw/en">
-                        <p class="dull">With Tyla, SZA, Ayra Starr and more</p>
+                        <p>With Tyla, SZA, Ayra Starr and more</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2sjFmfxifbUo2A25xuQOp0/en">
-                        <p class="dull">With Janisht Joshi, Chaar Diwaari, Taba...</p>
+                        <p>With Janisht Joshi, Chaar Diwaari, Taba...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/track/7D0RhFcb3CrfPuTJ0obrod/en">
-                        <p class="dull">With Coldplay, Conan Gray, Harry Styles an...</p>
+                        <p>With Coldplay, Conan Gray, Harry Styles an...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/5p9HO3XC5P3BLxJs5Mtrhm/en">
-                        <p class="dull">With Harry Styles, Tame Impala, Billie...</p>
+                        <p>With Harry Styles, Tame Impala, Billie...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1Xyo4u8uXC1ZmMpatF05PJ/en">
-                        <p class="dull">With Doja Cat, Drake, Ariana Grande and...</p>
+                        <p>With Doja Cat, Drake, Ariana Grande and...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4gzpq5DPGxSnKTe4SA8HAU/en">
-                        <p class="dull">With Ed Sheeran, OneRepublic, Maroo...</p>
+                        <p>With Ed Sheeran, OneRepublic, Maroo...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/6eUKZXaKkcviH0Ku9w2n3V/en">
-                        <p class="dull">With Maroon 5, One Direction, Sam Smith...</p>
+                        <p>With Maroon 5, One Direction, Sam Smith...</p>
                     </div>
                 </div>
             </div>
-            <div class="carousel">
-                <p class="littleline dull" style="font-size: smaller;"></p>
-                <div class="heading">
-                    <p class="mainline ul">Your top mixes</p>
-                    <p class="showAll ul dull">Show All</p>
+            <div class="feed-carousel">
+                    <div class="feed-carousel__head">
+                    <p class="carousel-head__note dull"></p>
+                    <div class="carousel-head__title">
+                        <p class="head-title__content ul">Your top mixes</p>
+                        <p class="head-title__showall ul dull">Show All</p>
+                    </div>
                 </div>
-                <div class="tilelist">
-                    <div class="tile btn">
+
+                <div class="feed-carousel__tilelist">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/hip_hop/55Aa2cqylxrFIXC767Z865/en">
-                        <p class="dull">Lil Wayne, Tyler, The Creator, Don Toliver...</p>
+                        <p>Lil Wayne, Tyler, The Creator, Don Toliver...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/0du5cEVh5yTK9QJze8zA0C/en">
-                        <p class="dull">Billie Eilish, JMSN and Coldplay</p>
+                        <p>Billie Eilish, JMSN and Coldplay</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/pop/74KM79TiuVKeVCqs8QtB0B/en">
-                        <p class="dull">Sabrina Carpenter, vaultboy, Olivia Dea...</p>
+                        <p>Sabrina Carpenter, vaultboy, Olivia Dea...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/twenty_twenties/5XMyhVhi5ZN2pi0Qwi1zXS/en">
-                        <p class="dull">Jay Crookes, dopuu, Gaurav Chatterji and...</p>
+                        <p>Jay Crookes, dopuu, Gaurav Chatterji and...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/twenty_tens/0du5cEVh5yTK9QJze8zA0C/en">
-                        <p class="dull">Bruno Mars, Sean Paul, XXXTENTACIO...</p>
+                        <p>Bruno Mars, Sean Paul, XXXTENTACIO...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/romantic/6qqNVTkY8uBg9cP3Jd7DAH/en">
-                        <p class="dull">Billie Eilish, Olivia Dean, A. R. Rahman...</p>
+                        <p>Billie Eilish, Olivia Dean, A. R. Rahman...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/moody/5XKFrudbV4IiuE5WuTPRmT/en">
-                        <p class="dull">Stephen Sanchez, Dominic Fike, Tyler,...</p>
+                        <p>Stephen Sanchez, Dominic Fike, Tyler,...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/bollywood/0qpsFfOT3SmdGmnyV6rOhS/en">
-                        <p class="dull">Meet Bros., Tanishk Bagchi, Arshad...</p>
+                        <p>Meet Bros., Tanishk Bagchi, Arshad...</p>
                     </div>
                 </div>
             </div>
-            <div class="carousel">
-                <p class="littleline dull" style="font-size: smaller;">Bringing together the top songs from an artist.</p>
-                <div class="heading">
-                    <p class="mainline ul">Best of artists</p>
-                    <p class="showAll ul dull">Show All</p>
+            <div class="feed-carousel">
+                    <div class="feed-carousel__head">
+                    <p class="carousel-head__note dull">Bringing together the top songs from an artist.</p>
+                    <div class="carousel-head__title">
+                        <p class="head-title__content ul">Best of artists</p>
+                        <p class="head-title__showall ul dull">Show All</p>
+                    </div>
                 </div>
-                <div class="tilelist">
-                    <div class="tile btn">
+                <div class="feed-carousel__tilelist">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/2sjFmfxifbUo2A25xuQOp0/en-GB">
-                        <p class="dull">This is gini. The essential tracks, all i...</p>
+                        <p>This is gini. The essential tracks, all i...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/2n4q8jLM4WLwlva1sZ2WRx/en">
-                        <p class="dull">This is Chaar Diwaari. The essential tracks,...</p>
+                        <p>This is Chaar Diwaari. The essential tracks,...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/74KM79TiuVKeVCqs8QtB0B/en">
-                        <p class="dull">This is Sabrina Carpenter. The...</p>
+                        <p>This is Sabrina Carpenter. The...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/5cj0lLjcoR7YOSnhnX0Po5/en">
-                        <p class="dull">This is Doja Cat. The essential tracks, all i...</p>
+                        <p>This is Doja Cat. The essential tracks, all i...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/5K4W6rqBFWDnAN6FQUkS6x/en">
-                        <p class="dull">This is Kayne West. The essential tracks,...</p>
+                        <p>This is Kayne West. The essential tracks,...</p>
                     </div>
-                    <div class="tile btn">
+                    <div class="carousel-tilelist__tile pointer">
                         <img src="https://i.scdn.co/image/ab67706f000000021e90d0ba15e76049f0d745ae">
-                        <p class="dull">All things Billie!</p>
+                        <p>All things Billie!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="activesongprofile">
-            <div class="vidcont">
+        <div class="container-main__nowplaying">
+            <div class="main-nowplaying__video">
                 <video loop autoplay muted src="./assets/shortvidplaying.mp4"></video>
             </div>
-            <div class="vidover">
-                <h2 class="btn">Iss Tarah</h2>
+            <div class="main-nowplaying__songinfo">
+                <h2 class="nowplaying-songinfo__toptitle pointer">Iss Tarah</h2>
                 <span>
-                <div>
-                <h1>Iss Tarah</h1>
-                <p class="dull">Chaar Diwaari, Sonu Nigam</p>
-                </div>
-                <img class="addedtoplaylist btn" src="./assets/addedtoplaylist.png" alt="">
+                    <div class="nowplaying-songinfo__content">
+                    <h1 class="nowplaying-songinfo__songtitle">Iss Tarah</h1>
+                    <p class="nowplaying-songinfo__songartists dull">Chaar Diwaari, Sonu Nigam</p>
+                    </div>
+                <img class="nowplaying-songinfo__tick pointer" src="./assets/addedtoplaylist.png" alt="">
                 </span>
             </div>
-            <div class="block btn">
+            <div class="main-nowplaying__artistbio block pointer">
                 <p class="abtartist">About the artist</p>
                 <img src="https://i.scdn.co/image/ab6761610000101f7893d3d72cd3b06791652580">
                 <p class="artistname ul">Chaar Diwaari</p>
                 <div>
                     <p class="nooffollowers dull">3,078,703 monthly listeners</p>
-                    <p class="followbtn brighten">Follow</p>
+                    <p class="followbutton brighten">Follow</p>
                 </div>
                 <p class="bio dull">PATANGAA</p>
             </div>
-            <div class="block">
+            <div class="main-nowplaying__credits block">
                 <span style="display: flex;justify-content: space-between; padding-right: 16px;">
                 <p class="abtartist">Credits</p>
-                <p class="showall ul dull">Show All</p>
+                <p class="head-title__showall ul dull">Show All</p>
                 </span>
                 <div class="creditlist">
-                    <div class="cred btn">
+                    <div class="cred pointer">
                         <span>
                         <h1 class="ul">Chaar Diwaari</h1>
                         <p class="dull">Main Artist •...</p>
                         </span>
-                        <p class="followbtn brighten">Follow</p>
+                        <p class="followbutton brighten">Follow</p>
                     </div>
-                    <div class="cred btn">
+                    <div class="cred pointer">
                         <span>
                         <h1 class="ul">Sonu Nigam</h1>
                         <p class="dull">Main Artist</p>
                         </span>
-                        <p class="followbtn brighten">Follow</p>
+                        <p class="followbutton brighten">Follow</p>
                     </div>
-                    <div class="cred btn">
+                    <div class="cred pointer">
                         <span>
                         <h1  class="ul">Garv Taneja</h1>
                         <p class="dull">Video Writer • Composer • Lyricist</p>
@@ -395,36 +406,36 @@
             </div>
         </div>
     </div>
-    <div id="bottom">
-        <div class="bottomleft">
-        <img class="activethumbnail btn" src="https://i.scdn.co/image/ab67616d00001e0285cb4bb53eaede8311ce3a32" alt="" srcset="">
+    <div class="container-bottom">
+        <div class="bottom-song__content">
+        <img class="activethumbnail pointer" src="https://i.scdn.co/image/ab67616d00001e0285cb4bb53eaede8311ce3a32" alt="" srcset="">
         <div class="activesongdetail">
-            <p class="playersongname ul btn">Iss Tarah</p>
-            <p class="credits dull ul btn">Chaar Diwaari, Sonu Nigam</p>
+            <p class="playersongname ul pointer">Iss Tarah</p>
+            <p class="credits dull ul pointer">Chaar Diwaari, Sonu Nigam</p>
         </div>
-        <img class="addedtoplaylist btn" src="./assets/addedtoplaylist.png" alt="">
+        <img class="addedtoplaylist pointer" src="./assets/addedtoplaylist.png" alt="">
         </div>
-        <div class="bottommid">
-            <div class="playercontrols">
-                <img class="btn" src="./assets/shuffle_active.png" alt="">
-                <img class="btn brighten" src="./assets/prev.png" alt="">
-                <div class="playorpause btn"><img src="./assets/play_black.png" alt=""></div>
-                <img class="btn brighten" style="rotate: 180deg;"src="./assets/prev.png" alt="">
-                <img class="btn brighten" src="./assets/loop.png" alt="">
+        <div class="bottom-song__player">
+            <div class="song-player__controls">
+                <img class="pointer" src="./assets/shuffle_active.png" alt="">
+                <img class="pointer brighten" src="./assets/prev.png" alt="">
+                <div class="controls-play pointer"><img src="./assets/play_black.png" alt=""></div>
+                <img class="pointer brighten" style="rotate: 180deg;"src="./assets/prev.png" alt="">
+                <img class="pointer brighten" src="./assets/loop.png" alt="">
             </div>
-            <div class="player">
-                <span class="time dull">2:50</span>
-                <div class="slider btn"><div class="sliderfilled"></div></div>
-                <span class="time dull">5:23</span>
+            <div class="song-player__slider">
+                <span class="slider-time dull">2:50</span>
+                <div class="player-slider__line pointer"><div class="slider-line_filled"></div></div>
+                <span class="slider-time dull">5:23</span>
             </div>
         </div>
-        <div class="bottomright">
-            <img class="btn brighten" src="./assets/lyrics.png">
-            <img class="btn brighten" src="./assets/queue.png">
-            <img class="btn brighten" src="./assets/devices.png">
-            <div class="volume btn brighten"><img src="./assets/sound.png"><div></div></div>
-            <img class="btn brighten" src="./assets/pip.png">
-            <img class="btn brighten" src="./assets/fullscreen.png">
+        <div class="bottom-song__controls">
+            <img class="pointer brighten" src="./assets/lyrics.png">
+            <img class="pointer brighten" src="./assets/queue.png">
+            <img class="pointer brighten" src="./assets/devices.png">
+            <div class="volume pointer brighten"><img src="./assets/sound.png"><div></div></div>
+            <img class="pointer brighten" src="./assets/pip.png">
+            <img class="pointer brighten" src="./assets/fullscreen.png">
         </div>
     </div>
     </div>

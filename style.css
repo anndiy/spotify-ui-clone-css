@@ -22,6 +22,9 @@ html, body {
     color: #fafafa;
     border: none;
 }
+:root {
+    --dull-color: #9e9e9e;
+}
 
 .container {
     display: flex;
@@ -31,10 +34,25 @@ html, body {
     overflow: hidden;
 }
 
-.btn {
+.pointer {
     cursor: pointer;
 }
 
 .dull {
-    color: #9e9e9e;
+    color: var(--dull-color);
+}
+
+.brighten {
+    transition: filter 0.2s ease;
+}
+.brighten:hover {
+    filter: brightness(1.5);
+}
+
+.ul {
+    transition: text-decoration 0.2s ease;
+}
+.ul:hover{
+    text-decoration: underline;
+    color:white;
 }

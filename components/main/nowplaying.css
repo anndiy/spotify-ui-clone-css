@@ -1,4 +1,4 @@
-.activesongprofile {
+.container-main__nowplaying {
     width: 280px;
     height: 520px;
     margin: 8px;
@@ -8,27 +8,27 @@
 }
 
 @-moz-document url-prefix() {
-.activesongprofile {
+.container-main__nowplaying {
     scrollbar-width: thin;
     scrollbar-color: #666 transparent;
 }
-.activesongprofile:hover {
+.container-main__nowplaying:hover {
     scrollbar-color: #909090 transparent;
 }
 }
 
-.activesongprofile::-webkit-scrollbar {
+.container-main__nowplaying::-webkit-scrollbar {
   width: 6px;
 }
-.activesongprofile::-webkit-scrollbar-thumb {
+.container-main__nowplaying::-webkit-scrollbar-thumb {
   background-color: #666;
 }
 
-.activesongprofile::-webkit-scrollbar-thumb:hover {
+.container-main__nowplaying::-webkit-scrollbar-thumb:hover {
   background-color: #909090;
 }
 
-.vidcont {
+.main-nowplaying__video {
     display: flex;
     height: 440px;
     mask-image: linear-gradient(
@@ -39,18 +39,18 @@
     transparent
   );
   }
-.vidcont video{
+.main-nowplaying__video video{
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
-.vidcont video:hover{
+.main-nowplaying__video video:hover{
     opacity: 1;
 }
 
-.vidover{
+.main-nowplaying__songinfo{
     margin-top: -430px;
     height: 420px;
     display: flex;
@@ -60,21 +60,21 @@
     padding-left: 14px;
 }
 
-.vidover h2 {
+.nowplaying-songinfo__toptitle {
     font-family: spotifyUIbold;
     font-size: medium;
 }
-.vidover h1{
+.nowplaying-songinfo__songtitle {
     font-family: spotifyUIbold;
     font-size: x-large;
     font-weight: bolder;
 }
 
-.vidover p{
+.nowplaying-songinfo__songartists p{
     font-size: medium;
 }
 
-.vidover span {
+.main-nowplaying__songinfo span {
     display: flex;
     align-items: center;
     width: 100%;
@@ -107,7 +107,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.followbtn {
+.followbutton {
     padding: 4px 14px;
     border: 1px solid rgb(141, 141, 141);
     border-radius: 30px;
